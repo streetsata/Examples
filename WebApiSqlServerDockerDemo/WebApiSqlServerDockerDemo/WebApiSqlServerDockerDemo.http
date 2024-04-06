@@ -1,0 +1,6 @@
+@WebApiSqlServerDockerDemo_HostAddress = http://localhost:5150
+
+GET {{WebApiSqlServerDockerDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
