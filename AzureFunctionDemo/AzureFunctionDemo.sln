@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubMonitorApp", "GitHubMonitorApp\GitHubMonitorApp.csproj", "{977AFA9F-DE2E-49C6-B012-437E744901DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{977AFA9F-DE2E-49C6-B012-437E744901DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977AFA9F-DE2E-49C6-B012-437E744901DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977AFA9F-DE2E-49C6-B012-437E744901DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977AFA9F-DE2E-49C6-B012-437E744901DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {469AD688-2DC4-45F3-97AE-0601E3C2D520}
+	EndGlobalSection
+EndGlobal
