@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace GitHubMonitorApp
 {
@@ -15,10 +16,16 @@ namespace GitHubMonitorApp
         }
 
         [Function("GitHubMonitorFunction")]
-        public IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequest req)
+        public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequest req)
         {
             _logger.LogInformation("Our GitHub monitor processed an action");
-            return new OkObjectResult("Welcome to Azure Functions!");
+
+            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+            dynamic data = JsonConvert.DeserializeObject(requestBody);
+
+            _logger.LogInformation(requestBody);
+
+            return new OkResult();
         }
     }
 }
